@@ -4,7 +4,7 @@
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "glamp/generator-yhat-node-demo",
+  "repository": "https://github.com/yhat/generator-yhat-node-demo",
   "author": {
     "name": "Greg Lamp",
     "email": "",
