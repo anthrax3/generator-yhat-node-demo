@@ -1,0 +1,32 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g' ]
+2 info using npm@2.0.0
+3 info using node@v0.10.32
+4 verbose node symlink /usr/local/bin/node
+5 verbose cache add [ '.', null ]
+6 verbose cache add spec="." args=[".",null]
+7 verbose parsed spec { raw: '.',
+7 verbose parsed spec   scope: null,
+7 verbose parsed spec   name: null,
+7 verbose parsed spec   rawSpec: '.',
+7 verbose parsed spec   spec: '/Users/glamp/repos/yhat/opensource/yeoman-yhat/generator-yhat-node-demo/app/templates',
+7 verbose parsed spec   type: 'local' }
+8 verbose parsed spec { raw: '/Users/glamp/repos/yhat/opensource/yeoman-yhat/generator-yhat-node-demo/app/templates',
+8 verbose parsed spec   scope: null,
+8 verbose parsed spec   name: null,
+8 verbose parsed spec   rawSpec: '/Users/glamp/repos/yhat/opensource/yeoman-yhat/generator-yhat-node-demo/app/templates',
+8 verbose parsed spec   spec: '/Users/glamp/repos/yhat/opensource/yeoman-yhat/generator-yhat-node-demo/app/templates',
+8 verbose parsed spec   type: 'local' }
+9 verbose stack Error: couldn't figure out how to install /Users/glamp/repos/yhat/opensource/yeoman-yhat/generator-yhat-node-demo/app/templates
+9 verbose stack     at addNonLocal (/usr/local/lib/node_modules/npm/lib/cache.js:309:12)
+9 verbose stack     at /usr/local/lib/node_modules/npm/lib/cache.js:281:22
+9 verbose stack     at Object.oncomplete (evalmachine.<anonymous>:107:15)
+10 verbose cwd /Users/glamp/repos/yhat/opensource/yeoman-yhat/generator-yhat-node-demo/app/templates
+11 error Darwin 14.1.0
+12 error argv "node" "/usr/local/bin/npm" "install" "-g"
+13 error node v0.10.32
+14 error npm  v2.0.0
+15 error couldn't figure out how to install /Users/glamp/repos/yhat/opensource/yeoman-yhat/generator-yhat-node-demo/app/templates
+16 error If you need help, you may report this error at:
+16 error     <http://github.com/npm/npm/issues>
+17 verbose exit [ 1, true ]
