@@ -1,4 +1,4 @@
-# generator-yhat-node-demo [![Build Status](https://secure.travis-ci.org/glamp/generator-yhat-node-demo.png?branch=master)](https://travis-ci.org/glamp/generator-yhat-node-demo)
+# generator-yhat-node-demo 
 
 > [Yeoman](http://yeoman.io) generator
 
