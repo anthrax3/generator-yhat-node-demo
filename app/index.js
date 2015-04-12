@@ -24,6 +24,7 @@ module.exports = yeoman.generators.Base.extend({
       { name: "author", message: "Author name?", default: "Yhat" },
       { name: "author_uri", message: "Author website?", default: "https://yhathq.com/" },
       { name: "port", message: "Port?", default: "5000" }
+      { name: "port", message: ":wq", default: "js" }
     ];
 
     this.prompt(prompts, function (props) {
