@@ -23,7 +23,7 @@ module.exports = yeoman.generators.Base.extend({
       { name: "modelname", message: "Yhat model name?" },
       { name: "author", message: "Author name?", default: "Yhat" },
       { name: "author_uri", message: "Author website?", default: "https://yhathq.com/" },
-      { name: "port", message: "Port?", default: "5000" }
+      { name: "port", message: "Port?", default: "5000" },
       { name: "is_js", message: "JS or Coffee?", default: "js" }
     ];
 

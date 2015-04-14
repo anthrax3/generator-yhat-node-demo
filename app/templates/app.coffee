@@ -1,5 +1,4 @@
 express = require('express')
-bodyParser = require('body-parser')
 logger = require('morgan')
 compress = require('compression')
 methodOverride = require('method-override')
@@ -30,7 +29,6 @@ app.enable 'view cache'
 app.use compress()
    .use favicon()
    .use logger('dev')
-   .use bodyParser()
    .use methodOverride()
    .use express.static(path.join(__dirname, 'public'))
 
@@ -52,4 +50,3 @@ app.get '*', (req, res) ->
 
 http.createServer(app).listen app.get('port'), ->
   console.log 'Express server listening on port ' + app.get('port')
-  return

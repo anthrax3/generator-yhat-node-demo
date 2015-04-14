@@ -1,8 +1,6 @@
 var express = require('express'),
-    bodyParser = require('body-parser'),
     logger = require('morgan'),
     compress = require('compression'),
-    bodyParser = require('body-parser'),
     methodOverride = require('method-override'),
     favicon = require('static-favicon'),
     hbs = require('express-hbs'),
@@ -13,9 +11,9 @@ var express = require('express'),
 
 
 var yh = yhat.init(
-    process.env.YHAT_USERNAME,
-    process.env.YHAT_APIKEY,
-    "http://cloud.yhathq.com/"
+  process.env.YHAT_USERNAME,
+  process.env.YHAT_APIKEY,
+  "http://cloud.yhathq.com/"
 );
 
 var app = express();
@@ -37,7 +35,6 @@ app.enable('view cache');
 app.use(compress())
    .use(favicon())
    .use(logger('dev'))
-   .use(bodyParser())
    .use(methodOverride())
    .use(express.static(path.join(__dirname, 'public')));
 
