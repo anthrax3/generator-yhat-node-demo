@@ -10,11 +10,10 @@
             <form id="ze-form" class="form-horizontal" role="form" action="/" method="post" enctype="multipart/form">
                 <div class="form-group">
                     <!-- fields for the model -->
-                    {{#params}}
                     <div class="row">
                         <label for="example_numerical_field" class="col-sm-4 control-label">Example Numerical Field</label>
                         <div class="col-sm-8">
-                            <input type="number" class="form-control" id="example_numerical_field" min="0" max="100" step="10" value="{{ example_numerical_field }}">
+                            <input type="number" class="form-control" id="example_numerical_field" min="0" max="100" step="10" value="{{ params.example_numerical_field }}">
                         </div>
                     </div>
 
@@ -28,7 +27,6 @@
                             </select>
                         </div>
                     </div>
-                    {{/params}}
                 </div>
               <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
