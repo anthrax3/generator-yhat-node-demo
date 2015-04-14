@@ -2,7 +2,7 @@ var express = require('express'),
     logger = require('morgan'),
     compress = require('compression'),
     methodOverride = require('method-override'),
-    favicon = require('static-favicon'),
+    favicon = require('serve-favicon'),
     hbs = require('express-hbs'),
     path = require('path'),
     fs = require('fs'),
@@ -33,7 +33,7 @@ app.set('view engine', 'html');
 app.enable('view cache');
 
 app.use(compress())
-   .use(favicon())
+   .use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
    .use(logger('dev'))
    .use(methodOverride())
    .use(express.static(path.join(__dirname, 'public')));

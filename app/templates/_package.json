@@ -11,7 +11,7 @@
         "start": "node app.js"
     },
     "dependencies": {
-        <% if (!is_js) { %>
+        <% if (/coffee/.test(is_js)) { %>
         "coffee-script": "~1.7.1",
         <% } %>
         "compression": "1.0.1",
@@ -20,7 +20,7 @@
         "express-hbs": "^0.8.4",
         "method-override": "^2.0.2",
         "morgan": "^1.1.1",
-        "static-favicon": "~1.0.1",
+        "serve-favicon": "~1.0.1",
         "yhat": "^0.5.0"
     },
     "devDependencies": {
