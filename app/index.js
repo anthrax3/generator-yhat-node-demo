@@ -24,7 +24,7 @@ module.exports = yeoman.generators.Base.extend({
       { name: "author", message: "Author name?", default: "Yhat" },
       { name: "author_uri", message: "Author website?", default: "https://yhathq.com/" },
       { name: "port", message: "Port?", default: "5000" }
-      { name: "port", message: ":wq", default: "js" }
+      { name: "is_js", message: "JS or Coffee?", default: "js" }
     ];
 
     this.prompt(prompts, function (props) {
@@ -35,6 +35,7 @@ module.exports = yeoman.generators.Base.extend({
       this.author = props.author;
       this.author_uri = props.author_uri;
       this.port = props.port;
+      this.is_js = props.is_js!="coffee";
       // To access props later use this.props.someOption;
       done();
     }.bind(this));
@@ -51,7 +52,11 @@ module.exports = yeoman.generators.Base.extend({
       mkdirp('public/fonts');
       this.template('_package.json', 'package.json');
       this.template('README.md', 'README.md');
-      this.template('app.js', 'app.js');
+      if (this.is_js) {
+        this.template('app.js', 'app.js');
+      } else {
+        this.template('app.coffee', 'app.coffee');
+      }
       this.template('views/layout.html', 'views/layout.html');
       this.template('views/index.html', 'views/index.html');
       this.copy('public/css/bootstrap.min.css', 'public/css/bootstrap.min.css');
